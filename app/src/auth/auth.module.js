@@ -8,7 +8,7 @@ const { JwtModule } = require('@nestjs/jwt');
   imports: [
     UsersModule,
     JwtModule.register({
-      secret: 'your-secret-key',  // Replace with a strong key
+      secret: 'your-secret-key',  
       signOptions: { expiresIn: '60m' },
     }),
   ],
